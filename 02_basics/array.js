@@ -49,16 +49,42 @@ const arr2 = myArr.join();
 
 //slice() and splice()
 
-const arrayA = [0, 1, 2, 3, 4, 5];
-console.log("A ", arrayA);
-console.log(arrayA.slice(1, 3));
-console.log(arrayA);
+// const arrayA = [0, 1, 2, 3, 4, 5];
+// console.log("A ", arrayA);
+// console.log(arrayA.slice(1, 3));
+// console.log(arrayA);
 
 
-const arrayB = [0, 1, 2, 3, 4, 5];
-console.log("B " , arrayB);
-console.log(arrayB.splice(1, 3)); // splice() removes element and modify original array
-console.log(arrayB);
+// const arrayB = [0, 1, 2, 3, 4, 5];
+// console.log("B " , arrayB);
+// console.log(arrayB.splice(1, 3)); // splice() removes element and modify original array
+// console.log(arrayB);
+
+
+const array1 = [0, 1, 2, 3];
+const array2 = [4, 5, 6, 7];
+// array1.push(array2);
+// console.log(array1);
+
+const array3 = array1.concat(array2);
+const allNumbers = [...array1,...array2];
+console.log(allNumbers);
+
+console.log(Array.isArray(array3));
+console.log(Array.isArray("Afroz"));
+console.log(Array.from("Afroz"));
+
+const user1 = "ram"
+const user2 = "sam"
+const user3 = "robin"
+console.log(Array.of(user1, user2, user3));
+
+console.log(Array.from({name : "afroz"}));//returns empty array ******????
+
+
+
+
+
 
 
 
